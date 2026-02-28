@@ -130,3 +130,8 @@ Dentro de las funciones y del bucle principal (`while True`), se utilizan variab
 
 <img width="750" height="780" alt="image" src="https://github.com/user-attachments/assets/c1e6f0b2-19c1-401a-9e91-09119daf5183" />
 
+## PRESENTACION JUEGO DE LA SERPIENTE
+[PRESENTACION JUEGO DE LA SERPIENTE.pdf](https://github.com/user-attachments/files/25634368/PRESENTACION.JUEGO.DE.LA.SERPIENTE.pdf)
+
+## VIDEO DEMOSTRATIVO DEL CODIGO Y TODO LO UTILIZADO EN LAS 4 UNIDADES DE LA CLASE 
+https://youtu.be/7_OfoeejpLI
