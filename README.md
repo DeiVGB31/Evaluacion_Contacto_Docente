@@ -82,6 +82,7 @@ Dentro de las funciones y del bucle principal (`while True`), se utilizan variab
 * **`segmento` / `i` (Iteradores):** Utilizados en los bucles `for`. `segmento` se usa para medir la distancia entre la cabeza y cada parte del cuerpo (para detectar choques), mientras que `i` se usa para mover cada bloque del cuerpo a las coordenadas `(x, y)` del bloque que le precede, creando la ilusión de movimiento continuo.
 
 ## 3. Instrucciones de Ejecución
+ `Juego de la Serpiente.py` 
 
 <img width="748" height="798" alt="image" src="https://github.com/user-attachments/assets/56b1a8dd-c248-4b8b-93b9-731233d7bc39" />
 
