@@ -6,19 +6,25 @@ Arquitectura de Software
 uno de cada uno.
 Diagrama de Funcionalidad (Casos de Uso)
 Diagrama de Casos de Uso - Juego la serpiente.
+
 JUGADOR (SERPIENTE).
+
 
 <img width="507" height="85" alt="image" src="https://github.com/user-attachments/assets/0c79d0dd-cdb1-4ee7-b2cf-c74849944f30" />
 
 SISTEMA, RECORRIDO O MAPA.
 
+
 <img width="302" height="339" alt="image" src="https://github.com/user-attachments/assets/9d3ac8ed-73b2-4bf8-b5da-4894deaf9de9" />
 
 Sistema del juego
+
 <img width="315" height="326" alt="image" src="https://github.com/user-attachments/assets/8fdb14b2-290c-4259-96e8-7be2cd527617" />
 
 Diagrama de Arquitectura
+
 Arquitectura MVC (Modelo-Vista-Controlador)
+
 
 <img width="828" height="349" alt="image" src="https://github.com/user-attachments/assets/9bc547f1-048c-4e4b-bdc2-f4d9898a1f86" />
 
