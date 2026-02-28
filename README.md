@@ -11,6 +11,48 @@ Impacto de las nuevas tecnologías en la sociedad y reflexionen sobre su potenci
 El objetivo de este programa es desarrollar una recreación funcional del clásico juego "Snake" utilizando Python y su librería nativa `turtle`. Este proyecto demuestra la aplicación práctica de los conocimientos adquiridos durante las 4 unidades de la materia, incluyendo el diseño de arquitectura MVC, diagramas funcionales, manejo de estructuras de control lógico (condicionales) y estructuras repetitivas (bucles).
 
 # AUTONOMO 1
+1. Diagramas Funcionales: Casos de Uso (UML)
+Un Diagrama de Casos de Uso pertenece al estándar UML (Lenguaje Unificado de Modelado). Su objetivo principal no es explicar cómo está programado el software, sino qué hace desde la perspectiva del usuario final.
+
+Para el juego de la Serpiente, los elementos teóricos se definen así:
+
+Actor Principal (El Jugador): Representa a la entidad externa que interactúa con el sistema. En este caso, es la persona sentada frente al teclado.
+
+Límite del Sistema: Es el "cuadro" que engloba todas las funciones. Representa el entorno de ejecución de tu programa en Python.
+
+Casos de Uso (Las funcionalidades):
+
+Inicializar / Reiniciar Partida: El actor interactúa con el menú principal enviando un comando (tecla ESPACIO). El sistema responde cambiando el estado del juego de "Pausa" a "Activo" y reseteando las variables a cero.
+
+Controlar Dirección: El actor ingresa comandos de entrada (W, A, S, D). El sistema procesa estas interrupciones de teclado (eventos) y actualiza el vector de dirección del objeto principal (la cabeza de la serpiente).
+
+Progresar en el Juego (Comer): Este es un caso de uso interno o automático. Cuando el jugador guía la serpiente hacia la coordenada de la comida, el sistema ejecuta una rutina que aumenta el tamaño de la serpiente y reubica la comida aleatoriamente.
+
+Finalizar Partida (Game Over): El sistema evalúa constantemente las reglas físicas. Si el jugador provoca que las coordenadas de la serpiente excedan los límites de la pantalla o coincidan con su propio cuerpo, el sistema detiene la ejecución y muestra el estado final.
+
+2. Arquitectura de Software: Patrón MVC (Modelo-Vista-Controlador)
+La arquitectura de software define cómo se organizan los "ladrillos". Elegir el patrón MVC demuestra que no solo escribiste código de arriba hacia abajo, sino que estructuraste el sistema separando las responsabilidades. Esto hace que el código sea escalable y fácil de mantener.
+
+Así es como se desglosa el patrón MVC aplicado específicamente al codigo
+
+El Modelo (M) - La Lógica de Datos:
+
+¿Qué es?: Es el cerebro de los datos. No sabe nada sobre colores, pantallas o teclados; solo maneja información pura y el estado de la aplicación.
+
+Son las variables y listas que declaraste. Por ejemplo, cuerpo = [] (la estructura de datos que guarda el tamaño), las coordenadas x e y, y el estado booleano en_juego = True/False. El Modelo "sabe" dónde está la serpiente, pero no la dibuja.
+
+La Vista (V) - La Interfaz Gráfica (UI):
+
+¿Qué es?: Es la "cara" del programa. Su única responsabilidad es tomar los datos del Modelo y mostrarlos en la pantalla para que el usuario los entienda.
+
+Es todo lo que utiliza la librería turtle. La configuración de ventana.bgcolor("black"), las formas shape("square") o shape("circle"), y los comandos como texto.write(...). La Vista toma las coordenadas que le da el Modelo y pinta los píxeles blancos y rojos en tu monitor.
+
+El Controlador (C) - El Gestor de Reglas:
+
+¿Qué es?: Es el puente de comunicación. Escucha lo que el usuario hace en la Vista, procesa esas acciones, actualiza el Modelo y le dice a la Vista que se actualice.
+
+Son dos partes fundamentales. Primero, el ventana.listen() que captura las teclas (W,A,S,D). Segundo, y más importante, el bucle while True:. Este bucle es el motor de física: calcula distancias (cabeza.distance(comida)), verifica choques contra la pared (cabeza.xcor() > 290) y decide cuándo llamar a la función game_over().
+
 1. Selección del Programa a desarrollar / Generación de Diagramas funcionales y
 Arquitectura de Software
 1.1. Tipos de Diagramas de funcionalidad y arquitectura de aplicaciones que existen y seleccionar
